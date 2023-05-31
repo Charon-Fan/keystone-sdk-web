@@ -1,5 +1,5 @@
 import type { KeypairType } from '@polkadot/util-crypto/types'
-import { keyring } from '@polkadot/ui-keyring'
+import { Keyring } from '@polkadot/keyring'
 
 import { type PolkadotAccount } from '../types/account'
 import { type PolkadotRequestProps } from '../types/props'
@@ -10,26 +10,14 @@ enum Prefix {
   ETHEREUM = 'ethereum'
 }
 
-const isKeyringLoaded = (): boolean => {
-  try {
-    // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
-    return !!keyring.keyring
-  } catch {
-    return false
-  }
-}
-
 export class KeystonePolkadotSDK {
-  constructor () {
-    isKeyringLoaded() || keyring.loadAll({})
+  private readonly _keyring: Keyring = new Keyring({ type: 'sr25519' })
+
+  generateUOSSignRequest (tx: PolkadotRequestProps): any {
+    return tx
   }
 
-  generateSignRequest ({
-    ...rest
-  }: PolkadotRequestProps): any {
-  }
-
-  parseSignature (ur: string): PolkadotSignature | any {
+  parseUOSSignature (ur: string): PolkadotSignature | any {
     return ur
   }
 
@@ -54,7 +42,7 @@ export class KeystonePolkadotSDK {
     }
 
     return {
-      address: keyring.addExternal(content).pair.address,
+      address: this._keyring.addFromAddress(content).address,
       genesisHash,
       name: name?.length !== 0 ? name.join(':') : undefined,
       type

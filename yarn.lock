@@ -880,7 +880,7 @@
     "@polkadot/util-crypto" "12.2.1"
     tslib "^2.5.0"
 
-"@polkadot/networks@12.2.1", "@polkadot/networks@^12.2.1":
+"@polkadot/networks@12.2.1":
   version "12.2.1"
   resolved "https://registry.yarnpkg.com/@polkadot/networks/-/networks-12.2.1.tgz#ce3e2371e3bd02c9c1b233846b9fe1df4601f560"
   integrity sha512-lYLvFv6iQ2UzkP66zJfsiTo2goeaNeKuwiaGoRoFrDwdwVeZK/+rCsz1uAyvbwmpZIaK8K+dTlSBVWlFoAkgcA==
@@ -958,31 +958,6 @@
     "@polkadot/util-crypto" "^12.2.1"
     rxjs "^7.8.1"
     tslib "^2.5.2"
-
-"@polkadot/ui-keyring@^3.4.1":
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/@polkadot/ui-keyring/-/ui-keyring-3.4.1.tgz#4272cfd1575e402def0811e58a217cfce11cbda8"
-  integrity sha512-b5xkL2j6d2VcaVIg4p0HsUZmbSO0Ebb6XtM8g3hPJc9XEJ2FCKq0pvaErOs8hAJFM71j62KBv/QasmH3/7lUyQ==
-  dependencies:
-    "@polkadot/keyring" "^12.2.1"
-    "@polkadot/ui-settings" "3.4.1"
-    "@polkadot/util" "^12.2.1"
-    "@polkadot/util-crypto" "^12.2.1"
-    mkdirp "^3.0.1"
-    rxjs "^7.8.1"
-    store "^2.0.12"
-    tslib "^2.5.0"
-
-"@polkadot/ui-settings@3.4.1":
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/@polkadot/ui-settings/-/ui-settings-3.4.1.tgz#0a74f154b8173c449826bad9bfdafefcb30225cc"
-  integrity sha512-2ym8ipRl14dedExABx/+NBLxh/8W8yMukY72db+weguJBC8/AAgNAzSX4tub9IGivArSTgi2T2/zLNXEKYtA+Q==
-  dependencies:
-    "@polkadot/networks" "^12.2.1"
-    "@polkadot/util" "^12.2.1"
-    eventemitter3 "^5.0.1"
-    store "^2.0.12"
-    tslib "^2.5.0"
 
 "@polkadot/util-crypto@12.2.1", "@polkadot/util-crypto@^12.2.1":
   version "12.2.1"
@@ -3788,11 +3763,6 @@ minimist@^1.2.0, minimist@^1.2.6:
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.8.tgz#c1a464e7693302e082a075cee0c057741ac4772c"
   integrity sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==
 
-mkdirp@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-3.0.1.tgz#e44e4c5607fb279c168241713cc6e0fea9adcb50"
-  integrity sha512-+NsyUUAZDmo6YVHzL/stxSu3t9YS1iljliy3BSDrXJ/dkn1KYdmtZODGGjLcc9XLgVVpH4KshHB8XmZgMhaBXg==
-
 mock-socket@^9.2.1:
   version "9.2.1"
   resolved "https://registry.yarnpkg.com/mock-socket/-/mock-socket-9.2.1.tgz#cc9c0810aa4d0afe02d721dcb2b7e657c00e2282"
@@ -4353,11 +4323,6 @@ stack-utils@^2.0.3:
   integrity sha512-XlkWvfIm6RmsWtNJx+uqtKLS8eqFbxUg0ZzLXqY0caEy9l7hruX8IpiDnjsLavoBgqCCR71TqWO8MaXYheJ3RQ==
   dependencies:
     escape-string-regexp "^2.0.0"
-
-store@^2.0.12:
-  version "2.0.12"
-  resolved "https://registry.yarnpkg.com/store/-/store-2.0.12.tgz#8c534e2a0b831f72b75fc5f1119857c44ef5d593"
-  integrity sha512-eO9xlzDpXLiMr9W1nQ3Nfp9EzZieIQc10zPPMP5jsVV7bLOziSFFBP0XoDXACEIFtdI+rIz0NwWVA/QVJ8zJtw==
 
 string-length@^4.0.1:
   version "4.0.2"

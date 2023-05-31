@@ -1,7 +1,7 @@
 import KeystoneSDK from '../../src'
 
 test('parseAccount-polkadot', () => {
-  const ur = 'substrate:123dTzDaBPSoiGzA7YvuPZZcRL3tQv7eaWeZdicV5qggUWAH:0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3:DOT-0';
+  const ur = 'substrate:123dTzDaBPSoiGzA7YvuPZZcRL3tQv7eaWeZdicV5qggUWAH:0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3:DOT-0'
   const keystoneSDK = new KeystoneSDK()
 
   const expectResult = {

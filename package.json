@@ -36,7 +36,7 @@
     "@keystonehq/bc-ur-registry-sui": "^0.2.0",
     "@ngraveio/bc-ur": "^1.1.6",
     "@polkadot/extension-dapp": "^0.46.3",
-    "@polkadot/ui-keyring": "^3.4.1",
+    "@polkadot/keyring": "^12.2.1",
     "@polkadot/util": "^12.2.1",
     "bs58check": "^3.0.1",
     "pako": "^2.1.0",
