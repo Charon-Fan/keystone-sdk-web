@@ -10,9 +10,18 @@ enum Prefix {
   ETHEREUM = 'ethereum'
 }
 
+const isKeyringLoaded = (): boolean => {
+  try {
+    // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
+    return !!keyring.keyring
+  } catch {
+    return false
+  }
+}
+
 export class KeystonePolkadotSDK {
   constructor () {
-    keyring.loadAll({})
+    isKeyringLoaded() || keyring.loadAll({})
   }
 
   generateSignRequest ({
