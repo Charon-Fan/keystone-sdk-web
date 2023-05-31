@@ -9,7 +9,7 @@ import { type Input, type Output } from '../gen/protos/btc_transaction_pb'
 import { type DashTx_Input } from '../gen/chains/keystone/protos/dash_transaction_pb'
 import { type Chain } from '../chains/keystone'
 import { type PartialMessage } from '@bufbuild/protobuf'
-import { type CosmosAccount, type AptosAccount, type SuiAccount } from './account'
+import { type CosmosAccount, type AptosAccount, type SuiAccount, type PolkadotAccount } from './account'
 import { type SaltLen, type SignType as ArweaveSignType } from '@keystonehq/bc-ur-registry-arweave'
 import { type CardanoCertKeyData, type CardanoUtxoData } from '@keystonehq/bc-ur-registry-cardano'
 
@@ -114,4 +114,9 @@ export interface SuiSignRequestProps {
   signType: SuiSignType
   accounts: SuiAccount[]
   origin?: string
+}
+
+export interface PolkadotRequestProps {
+  accounts: PolkadotAccount[]
+  signData: string
 }

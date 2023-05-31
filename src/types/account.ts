@@ -51,3 +51,5 @@ export interface SuiAccount {
   xfp: string
   address?: string
 }
+
+export { type InjectedAccount as PolkadotAccount } from '@polkadot/extension-inject/types'

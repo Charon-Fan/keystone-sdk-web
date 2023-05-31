@@ -7,7 +7,7 @@ import {
   KeystoneCosmosSDK, KeystoneDashSDK,
   KeystoneEthereumSDK, KeystoneLitecoinSDK,
   KeystoneSolanaSDK, KeystoneTronSDK,
-  KeystoneNearSDK, KeystoneSuiSDK
+  KeystoneNearSDK, KeystoneSuiSDK, KeystonePolkadotSDK
 } from './chains'
 import { parseMultiAccounts, parseHDKey, generateKeyDerivationCall } from './wallet'
 
@@ -106,6 +106,14 @@ export class KeystoneSDK {
       this._sui = new KeystoneSuiSDK()
     }
     return this._sui
+  }
+
+  private _polkadot!: KeystonePolkadotSDK
+  get polkadot (): KeystonePolkadotSDK {
+    if (this._polkadot === undefined) {
+      this._polkadot = new KeystonePolkadotSDK()
+    }
+    return this._polkadot
   }
 
   private _cardano!: KeystoneCardanoSDK
