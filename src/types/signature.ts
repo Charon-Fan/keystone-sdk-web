@@ -46,6 +46,6 @@ export interface SuiSignature extends Signature {
   publicKey: string
 }
 
-export interface PolkadotSignature extends Signature {
-  publicKey: string
+export interface PolkadotSignature {
+  signature: string
 }
